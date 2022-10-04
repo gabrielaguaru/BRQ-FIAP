@@ -240,7 +240,13 @@ main {
   }
 }
 
-@media (max-height: 735px) {
+@media (max-height: 818px) {
+  .car {
+    margin-bottom: 15px !important;
+  }
+}
+
+@media (max-height: 780px) {
   .music {
     display: none;
   }

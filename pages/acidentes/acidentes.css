@@ -114,7 +114,7 @@ main {
 }
 
 .options {
-  position: relative;
+
   background-color: #dfdfdf;
   display: flex;
   padding: 50px;
@@ -172,10 +172,14 @@ main {
   border-radius: 20px;
 }
 
+.localizacao-wrapper {
+  position: relative;
+}
+
 .localizacao-texto {
   position: absolute;
-  right: 95px; 
-  bottom: 26px;
+  right: 0; 
+  bottom: -20px;
   font-size: .9rem;
 }
 
@@ -204,13 +208,13 @@ main {
   }
 }
 
-@media (max-height: 735px) {
-  .more-options {
-    display: none;
+@media (max-height: 755px) {
+  .options {
+    padding: 20px;
   }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 850px) {
   .options {
     margin-top: 0px;
   }

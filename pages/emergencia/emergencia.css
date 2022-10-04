@@ -205,21 +205,15 @@ main {
   }
 }
 
-@media (max-height: 735px) {
-  .more-options {
-    display: none;
+@media (max-height: 755px) {
+  .options {
+    padding: 20px;
   }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 850px) {
   .options {
     margin-top: 0px;
-  }
-}
-
-@media (max-width: 1030px) {
-  .volante {
-    display: none;
   }
 }
 
