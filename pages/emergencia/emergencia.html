@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRQ Challenge - FIAP</title>
+    <link rel="stylesheet" href="./emergencia.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="../../assets/headers-icons.png"
+        alt="Ícones de bluetooth, LTE e 3 pontos"
+      />
+      <span>08:40 PM</span>
+    </header>
+    <nav>
+      <ul>
+        <a href="../../index.html">
+          <li>
+            <img src="../../assets/seta.png" alt="Ícone de setinha" />
+          </li>
+        </a>
+        <li class="selected">
+          <img
+            src="../../assets/app.png"
+            alt="Ícone de 4 quadrados representando o menu"
+          />
+        </li>
+        <li>
+          <img src="../../assets/musica.png" alt="Ícone símbolo de música" />
+        </li>
+        <li><img src="../../assets/ligacao.png" alt="Ícone de telefone" /></li>
+        <li><img src="../../assets/carro.png" alt="Ícone de carro" /></li>
+        <li>
+          <img
+            src="../../assets/configuracao.png"
+            alt="Ícone de engrenagem representando configurações"
+          />
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="main-left">
+        <section class="car">
+          <img
+            src="../../assets/emergency.png"
+            alt="Ícone redondo de emergência S.O.S"
+          />
+        </section>
+        <section class="more-options">
+          <div class="card">
+            <a href="../casa/casa.html" class="link">
+              <img
+                src="../../assets/house.png"
+                alt="Ícone de uma casa com uma lâmpada"
+                class="card-img"
+              />
+              <p class="card-name">Automação Casa</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="../acidentes/acidentes.html" class="link">
+              <img
+                src="../../assets/accident.png"
+                alt="Ícone de uma pessoa caindo representando um acidente"
+                class="card-img"
+              />
+              <p class="card-name">Acidentes</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#" class="link">
+              <img
+                src="../../assets/call.png"
+                alt="Ícone de telefone"
+                class="card-img"
+              />
+              <p class="card-name">Telefone</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#" class="link">
+              <img
+                src="../../assets/music-menu.png"
+                alt="Ícone de nota musical"
+                class="card-img"
+              />
+              <p class="card-name">Música</p>
+            </a>
+          </div>
+        </section>
+      </div>
+      <div class="main-right">
+        <section class="options">
+          <h1>Emergência</h1>
+          <p>
+            A função emergência conta com um botão de emergência que deverá ser
+            acionado para casos de assalto, no qual após pressionado, emite uma
+            mensagem para o 2 números de segurança e seguro (se houver), com localização em tempo
+            real. Se o carro possuir câmera integrada, após ser acionado o botão
+            também inicia-se uma gravação.
+          </p>
+          <div class="content">
+            <div class="forms">
+              <div class="tel">
+                <label for="seguro">Seguro:</label>
+                <img
+                  src="../../assets/BR.png"
+                  alt="Imagem da bandeira do Brasil"
+                />
+                <input type="text" name="seguro" id="seguro" />
+              </div>
+              <div class="tel">
+                <label for="contato1">Contato 1:</label>
+                <img
+                  src="../../assets/BR.png"
+                  alt="Imagem da bandeira do Brasil"
+                />
+                <input type="text" name="contato1" id="contato1" />
+              </div>
+              <div class="tel">
+                <label for="contato2">Contato 2:</label>
+                <img
+                  src="../../assets/BR.png"
+                  alt="Imagem da bandeira do Brasil"
+                />
+                <input type="text" name="contato2" id="contato2" />
+              </div>
+            </div>
+            <button class="emergency">Ativar Emergência</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

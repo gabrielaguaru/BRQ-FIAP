@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #adabab80;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  font-weight: bold;
+}
+
+nav {
+  position: fixed;
+  width: 68px;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 80px;
+}
+
+nav ul li {
+  padding: 15px 15px 12px 15px;
+  margin: 0 0 10px 14px;
+  cursor: pointer;
+}
+
+nav ul li.selected {
+  background-image: linear-gradient(to right, #adabab80, #d0cfcf);
+  background-color: #d0cfcf;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: inset 8px 0px 6px rgba(0, 0, 0, 0.05);
+}
+
+main {
+  padding: 5% 10% 3%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-left {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.main-left .car,
+.main-left .music {
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.main-left .car {
+  margin-bottom: 50px;
+}
+
+.main-left .car .cards {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+.main-left .car .cards .temp,
+.main-left .car .cards .esc {
+  width: 30%;
+  padding: 8px;
+  background-color: #ededed;
+  border-radius: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+.main-left .car {
+  padding-bottom: 30px;
+}
+
+.car-image {
+  display: block;
+  margin: auto;
+}
+
+.main-left .car .vel {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.main-left .car .vel p {
+  color: #00000080;
+  margin: 0;
+}
+
+.main-left .car .vel .vel-number {
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.main-left .car .vel .km {
+  color: #00000080;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.main-left .car .cards img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.main-left .temp p,
+.main-left .esc p {
+  margin: 12px 0 3px 0;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.main-left .temp span,
+.main-left .esc span {
+  font-size: 0.8rem;
+  color: #00000080;
+}
+
+.main-left .music {
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.player,
+.player-bar {
+  width: 100%;
+}
+
+.main-left .music p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.main-left .music .music-name {
+  color: #00000080;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.main-left .music .time {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.main-left .music .time span {
+  font-size: 0.8rem;
+}
+
+.main-right {
+  width: 70%;
+}
+
+.map-base {
+  position: relative;
+}
+
+.img-map {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  height: 730px;
+  object-fit: cover;
+}
+
+.m900 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.brq {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.location {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.zoom {
+  position: absolute;
+  top: 200px;
+  right: 30px;
+}
+
+@media (max-width: 1400px) {
+  .main-left .temp p,
+  .main-left .esc p {
+    font-size: 0.7rem;
+  }
+  .car-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 7% 2% 2% 10%;
+    justify-content: space-around;
+  }
+}
+
+@media (max-height: 800px) {
+  .img-map {
+    height: 85vh;
+  }
+  .car {
+    margin-bottom: 10px !important;
+  }
+}
+
+@media (max-height: 735px) {
+  .music {
+    display: none;
+  }
+}
